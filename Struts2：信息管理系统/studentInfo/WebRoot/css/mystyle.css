@@ -1,0 +1,18 @@
+.scrollimg {
+	background-repeat: no-repeat;
+}
+.borderstyle {
+	border: 1px solid #999999;
+}
+font {
+	font-size: 9pt;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="strutsqs" extends="struts-default">
+		<action name="login" class="request.IndexAction">
+			<result name="ok">/main.jsp</result>
+			<result name="input">/login.jsp</result>
+		</action>
+		
+		<action name="students" class="request.StudentInfoAction">
+			<result name="ok">/userlist.jsp</result>
+		</action>
+		
+		<action name="studentdelete" class="request.StudentDelete">
+		<result type="chain">students</result>
+		</action>
+		
+		<action name="studentRegist" class="request.StudentRegist">
+		<result name="ok">/addsuccess.jsp</result>
+		</action>
+		
+		<action name="studentSelect" class="request.StudentSelect">
+		<result name="ok">/userlist2.jsp</result>
+		<result name="input">/userlist2.jsp</result>
+		</action>
+		
+		<action name="studentDetail" class="request.StudentDetail">
+		<result name="ok">/studentDetail.jsp</result>
+		</action>
+		
+		<action name="companyRegist" class="request.CompanyRegist">
+		<result name="ok">/addsuccess.jsp</result>
+		</action>
+		
+		<action name="companySelect" class="request.CompanySelect">
+		<result name="ok">/userlist3.jsp</result>
+		<result name="input">/userlist3.jsp</result>
+		</action>
+		
+		<action name="companyDetail" class="request.CompanyDetail">
+		<result name="ok">/companyDetail.jsp</result>
+		</action>
+		
+	</package>
+</struts>    
